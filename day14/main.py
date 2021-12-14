@@ -42,13 +42,10 @@ def part2(data, start):
                 else:
                     npcnt[p] = v
         pcnt = npcnt
-        print(n)
-        print(pcnt)
     cnt = Counter()
     for k, v in pcnt.items():
         for x in k:
             cnt[x] += v
-    print(cnt)
     cntmc = cnt.most_common()
     mc = cntmc[0][1]
     if mc in [start[0], start[-1]]:
